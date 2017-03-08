@@ -4,8 +4,16 @@
     <data>
 
         <variable
+            name="handler"
+            type="com.alobot.dummydatabinding.handlers.Main_Handler" />
+
+        <variable
             name="user"
-            type="com.alobot.dummydatabinding.objects.User" />
+            type="com.alobot.dummydatabinding.objects.User_Object" />
+
+        <variable
+            name="button"
+            type="com.alobot.dummydatabinding.objects.Button_Object" />
 
     </data>
 
@@ -18,12 +26,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{handler::onClickFirstName}"
             android:text="@{user.firstName}" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{(view) -> handler.onClickLastName(view, user)}"
             android:text="@{user.lastName}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view) -> handler.onClickNextUser(view, user)}"
+            android:text="@{button.title}" />
 
     </LinearLayout>
 
