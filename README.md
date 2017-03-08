@@ -1,4 +1,4 @@
-# DummyDataBindingWithEventsHandler
+# DummyDataBinding
 
 Data Binding With Events Handler In Android Studio
 
