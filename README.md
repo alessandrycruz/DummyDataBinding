@@ -1,6 +1,6 @@
 # DummyDataBinding
 
-Data Binding In Android Studio
+Data Binding With Events Handler In Android Studio
 
 [ES] Para descargar este proyecto directamente a Android Studio haz lo siguiente.
 
